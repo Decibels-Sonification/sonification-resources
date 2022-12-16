@@ -18,3 +18,4 @@ The below is a non-exhaustive list of tools that our community members have used
 
 ### Hardware
 
+- **[Photon Smasher](https://www.clipsoundandmusic.uk/photonsmasher/)** - mini-sensor device that converts light into sound. "Use a solar cell to convert light into sound and explore a hidden world of rhythms, melodies and textures."
