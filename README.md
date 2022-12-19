@@ -16,6 +16,10 @@ The below is a non-exhaustive list of tools that our community members have used
 - **[p5 Sound](https://p5js.org/reference/#/libraries/p5.sound)** - a Javascript library from the p5.js ecosystem that provides useful methods for accessing the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 - **[Tone.js](https://tonejs.github.io/)** - a Web Audio framework written in Javascript for creating interactive music in the browser.
 
+### Software
+
+- **[Holon.ist](https://holon.ist/)** - Holon.ist is a system for flexible processing of sensor data into MIDI and OSC. Available for iPhone and iPad as a Universal iOS app. Connect your studio hardware and favourite music apps, VJ or lighting software, or make your own sounds with embedded Pure Data. 
+
 ### Hardware
 
 - **[Photon Smasher](https://www.clipsoundandmusic.uk/photonsmasher/)** - mini-sensor device that converts light into sound. "Use a solar cell to convert light into sound and explore a hidden world of rhythms, melodies and textures."
