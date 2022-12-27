@@ -1,6 +1,6 @@
 # Sonification Resources
 
-Data sonification tips, tools, and techniques by [Decibels](https://decibels.community/), a data sonification community. This is a community-build resource. If you'd like to contribute then either submit [a Github issue](https://github.com/Decibels-Sonification/sonification-resources/issues), file a [pull request](https://github.com/Decibels-Sonification/sonification-resources/pulls), or approach us in our [Discord](http://decibels.community).
+Data sonification tips, tools, and techniques by [Decibels](https://decibels.community/), a data sonification community. This is a community-built resource. If you'd like to contribute then either submit [a Github issue](https://github.com/Decibels-Sonification/sonification-resources/issues), file a [pull request](https://github.com/Decibels-Sonification/sonification-resources/pulls), or approach us in our [Discord](http://decibels.community) server.
 
 ## What is sonification?
 
