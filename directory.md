@@ -1,6 +1,6 @@
 # The Decibels Directory of Members
 
-This document lists current members active in the Decibles community. We hope it can be a resource to help people connect and learn with eachother. 
+This document lists current members active in the Decibels community. We hope it can be a resource to help people connect and learn with each other. 
 
 If you'd like to add your name to the directory, then either submit [a Github issue](https://github.com/Decibels-Sonification/sonification-resources/issues), file a [pull request](https://github.com/Decibels-Sonification/sonification-resources/pulls), or approach us in our [Discord](http://decibels.community) server and we can get you listed.
 
