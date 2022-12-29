@@ -11,7 +11,7 @@ Feel free to use existing members as a template for adding information about you
 ### Ben Dexter Cooley
 - *creative technologist and developer exploring new ways of seeing and experiencing information*
 - - **Location:** Boston, MA, USA
-- **Website:** https://benjamincooley.com/
+- **Website:** https://benjamincooley.com/ // I also write a newsletter called [Data Curious](https://datacurious.substack.com/).
 - **Interests:** multi-sensory data experiences (data vis + sonification), generative music systems, sonifying things in nature
 - **Ask me for help or tips on:** frontend development, data sonification using Javascript, Ableton Live
 - **Find me on:** [Mastodon](https://vis.social/@bendexter)
