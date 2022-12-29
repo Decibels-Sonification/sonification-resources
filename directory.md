@@ -8,9 +8,17 @@ Please try to follow the format demonstrated below and fill in all fields to the
 
 ## Members
 
-**Ben Dexter Cooley** 
+### Ben Dexter Cooley
 - *creative technologist and developer exploring new ways of seeing and experiencing information*
 - **Website:** https://benjamincooley.com/
-- **Interests:** multi-sensory data experiences (data vis + sonificaiton), generative music systems, sonifying things in nature
+- **Interests:** multi-sensory data experiences (data vis + sonification), generative music systems, sonifying things in nature
 - **Ask me for help or tips on:** frontend development, data sonification using Javascript, Ableton Live
 - **Find me on:** [Mastodon](https://vis.social/@bendexter)
+
+### Duncan Geere
+- *information designer interested in climate and the environment. Co-host of the Loud Numbers podcast.*
+- **Location:** Helsingborg, Sweden
+- **Website:** http://www.duncangeere.com, http://www.loudnumbers.net
+- **Interests:** community-building, sonification tools and teaching, storytelling with sound
+- **Ask me for help or tips on:** tools, sonic variables, podcasting, modular synthesis, VCV Rack
+- **Find me on:** [Email](http://buttondown.email/duncangeere), [Mastodon](https://vis.social/@duncangeere), [Instagram](http://instagram.com/duncan_geere) 
