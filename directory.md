@@ -14,7 +14,7 @@ Feel free to use existing members as a template for adding information about you
 - **Website:** https://benjamincooley.com/ // I also write a newsletter called [Data Curious](https://datacurious.substack.com/).
 - **Interests:** multi-sensory data experiences (data vis + sonification), generative music systems, sonifying things in nature
 - **Ask me for help or tips on:** frontend development, data sonification using Javascript, Ableton Live
-- **Find me on:** [Mastodon](https://vis.social/@bendexter) or [Email](mailto:benjamincooley94@gmail.com).
+- **Find me on:** [Mastodon](https://vis.social/@bendexter), [Instagram](https://www.instagram.com/st.silva.music/) (musical project) or [Email](mailto:benjamincooley94@gmail.com).
 
 ### Duncan Geere
 - *information designer interested in climate and the environment. Co-host of the Loud Numbers podcast.*
