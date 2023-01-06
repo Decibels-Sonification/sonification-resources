@@ -23,3 +23,11 @@ Feel free to use existing members as a template for adding information about you
 - **Interests:** community-building, sonification tools and teaching, storytelling with sound
 - **Ask me for help or tips on:** tools, sonic variables, podcasting, modular synthesis, VCV Rack
 - **Find me on:** [Email](http://buttondown.email/duncangeere), [Mastodon](https://vis.social/@duncangeere), [Instagram](http://instagram.com/duncan_geere) 
+
+### Chelidon Frame
+- *sound artist, musician and fullstack developer*
+- **Location**: Milano, Italt
+- **Website:**: https://chelidonframe.site
+- **Interests:** data sonifications, free improvisation, science fiction
+- **Ask me for help or tips on:** frontend and backend development, scripts, tools for data sonifications (in Javascript, Python, Supercollider)
+- **Finde me on:** [Instagram](https://www.instagram.com/chelidonframe/), [Mastodon](https://mastodon.uno/@chelidonframe), [Facebook](https://www.facebook.com/ChelidonFrame), [Twitter](https://twitter.com/chelidonframe/)
