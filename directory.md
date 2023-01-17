@@ -31,7 +31,7 @@ Feel free to use existing members as a template for adding information about you
 - **Website:** http://www.duncangeere.com, http://www.loudnumbers.net
 - **Interests:** community-building, sonification tools and teaching, storytelling with sound
 - **Ask me for help or tips on:** tools, sonic variables, podcasting, modular synthesis, VCV Rack
-- **Find me on:** [Email](http://buttondown.email/duncangeere), [Mastodon](https://vis.social/@duncangeere), [Instagram](http://instagram.com/duncan_geere) 
+- **Find me on:** [Newsletter](http://buttondown.email/duncangeere), [Mastodon](https://vis.social/@duncangeere), [Instagram](http://instagram.com/duncan_geere) 
 
 ### Miriam Quick
 - *Journalist, author and musician who explores novel and diverse ways of communicating data.*
@@ -39,4 +39,4 @@ Feel free to use existing members as a template for adding information about you
 - **Website:** https://miriamquick.com/, https://www.loudnumbers.net/
 - **Interests:** sonification + musical form, storytelling with sound, multi-sensory data experiences
 - **Ask me for help or tips on:** sonic variables, music theory, sonification with Logic
-- **Find me on:** Email, Instagram, Twitter
+- **Find me on:** [Email](mailto:miriamquick@gmail.com), [Instagram](https://www.instagram.com/miriam_quick/), [Twitter](https://twitter.com/miriamquick)
