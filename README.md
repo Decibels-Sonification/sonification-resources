@@ -39,3 +39,18 @@ The below is a non-exhaustive list of tools that our community members have used
 
 - **[Photon Smasher](https://www.clipsoundandmusic.uk/photonsmasher/)** - mini-sensor device that converts light into sound. "Use a solar cell to convert light into sound and explore a hidden world of rhythms, melodies and textures."
 - **[Bleep Labs Sensory Coupler](https://bleeplabs.com/sc/)** - a Eurorack module that converts sensor data into control voltages. "The Sensory Coupler allows you to easily convert touch, proximity, light, magnetic fields, motion, and more into CV and gate."
+
+## Sonification tutorials
+
+### In Ableton
+- [Hipster Modular - Road to 270 - Ableton Live Sonification Template](https://www.youtube.com/watch?v=1Md1sJtVnc8)
+- [JSON Weather Tutorial - Ableton Live 9 Suite - Sonification](https://www.youtube.com/watch?v=3UP-Fs6b9_k)
+
+### In P5.js
+- [Data as Material series](https://youtube.com/playlist?list=PLLx7jIm38p9mATGvW9sUT3Gjk0kGX9sot)
+
+### In Max MSP
+- [Generative Sonification by sound artist James Wilkie Music using MaxMSP](https://www.instagram.com/p/CZOkLIHs8Yp/?igshid=OTA3YzJiYTA=)
+
+### Best practices
+- [Data Sonification: ‘Charts’ for Radio?](https://nationalpress.org/topic/data-sonification-charts-for-radio/)
