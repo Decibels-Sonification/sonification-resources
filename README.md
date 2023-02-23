@@ -27,7 +27,7 @@ The below is a non-exhaustive list of tools that our community members have used
 - **[Sonic Pi](https://sonic-pi.net/)** - a code-based music creation and performance tool created by Sam Aaron. The syntax is based on the Ruby coding language and built on top of Super Collider.
 - **[p5 Sound](https://p5js.org/reference/#/libraries/p5.sound)** - a Javascript library from the p5.js ecosystem that provides useful methods for accessing the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 - **[Tone.js](https://tonejs.github.io/)** - a Web Audio framework written in Javascript for creating interactive music in the browser.
-- **[Super Collider](https://supercollider.github.io/)** - Am open source platform for audio synthesis and algorithmic composition, used by musicians, artists and researchers working with sound. Very flexible and acts as the sound engine for many other audio applications and code libraries (ie see Sonic Pi above).
+- **[SuperCollider](https://supercollider.github.io/)** - Am open source platform for audio synthesis and algorithmic composition, used by musicians, artists and researchers working with sound. Very flexible and acts as the sound engine for many other audio applications and code libraries (ie see Sonic Pi above).
 
 ### Software
 
