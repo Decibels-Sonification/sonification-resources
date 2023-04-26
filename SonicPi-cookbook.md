@@ -57,3 +57,19 @@ live_loop :dataloop do
  The above recipe will "tick" through all the values in the `data` array. In this case, it stores each value in the `value` variable and then uses that value to pass in a MIDI note number to the synth.
  
  In order to prevent infinite looping through the array, the `if` statement at the end checks to see when you are at the end of the `data` array, and then stops the loop. 
+
+## Conditional statements
+
+Sonic Pi has a built in "if" statement which can be handy. The below statement sets a 50/50 chance of playing a given note:
+
+```
+play 53, amp: 0.3, release: 2 if one_in(2)
+```
+
+To make this more interesting, you can combine it with the `normalise` function documented above to control the frequency of notes based on a piece of data:
+
+```
+value = normalise(dataPoint,data.min,data.max,1,10)
+
+play 53, amp: 0.3 if one_in(value)
+```
