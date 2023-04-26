@@ -24,6 +24,18 @@ translatedValue = normalise(originalValue, 0.01, 1, 50, 120)
 
 In the above example, we set the range of the data (ie the `xmin` and `xmax`) as 0.01 and 1 (perhaps your data is in percentages). The output range is 50 - 120. You can set these numbers to whatever you like. In this example, perhaps this value will be used to change the "cutoff" of a synthesizer.
 
+## Loading data from CSV
+
+Sonic Pi includes a native method to read CSV files. The below snippet shows you how to load a CSV file and then save the first column as a data array in the variable `first_column`.
+
+```
+require "csv"
+
+file = "path/file.csv"
+data = CSV.parse(File.read(file), headers: true, col_sep: ",")
+first_column = data.by_col[1].map {|num| num.to_i} 
+```
+
 ## Looping through data
 
 If you have many values that you want to loop through and sonify, you can use the `tick` method:
