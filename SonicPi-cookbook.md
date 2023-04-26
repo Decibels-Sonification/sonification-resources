@@ -2,6 +2,8 @@
 
 Some "recipes" (ie code snippets) that can be used for sonification using Sonic Pi.
 
+*Sonic Pi is an open source, community project maintained by Sam Aaron. Please consider supporting [his Patreon](https://www.patreon.com/samaaron)!*
+
 ## Normalising data
 
 One of the most common [techniques in sonification](https://github.com/Decibels-Sonification/sonification-resources#methods-of-sonification) is to translate data values into a musical variable, also called **parameter mapping**. 
