@@ -32,8 +32,12 @@ Sonic Pi includes a native method to read CSV files. The below snippet shows you
 require "csv"
 
 file = "path/file.csv"
+
 data = CSV.parse(File.read(file), headers: true, col_sep: ",")
-first_column = data.by_col[1].map {|num| num.to_i} 
+
+# read first row and convert every observation to an integer. if you want to convert it to factor, use .map(&:to_f)
+first_column = data.by_col[1].map(&:to_i) 
+
 ```
 
 ## Looping through data
@@ -73,3 +77,46 @@ value = normalise(dataPoint,data.min,data.max,1,10)
 
 play 53, amp: 0.3 if one_in(value)
 ```
+
+
+## Sonifying distributions
+
+Let's say you have a dataset with distribution values, like 25% are X, 60% are Y and 15% are Z. If you wanted to represent this sonically, you might map each group (X,Y, and Z) to a different note and then want to spread those notes according to their percentage values. The below snippet shows how to do this:
+
+```
+# if you have a dataset with a distribution of values
+# this dataset means: 25% should be the note C3, 60% E3 and 15% G3
+data = [
+  [:C3, 0.25],
+  [:E3, 0.60],
+  [:G3, 0.15]
+]
+
+# create an empty array
+note_distribution = []
+
+# define length of the array
+len = 10
+
+# create an array with length of len and distribute the note-values according to the percentage
+data.length.times do |i|
+  n = data[i][1] * len.to_f
+  n.times do
+    note_distribution << data[i][0]
+  end
+end
+
+# shuffle the array
+note_distribution = note_distribution.shuffle
+puts note_distribution
+
+
+# now in the following live-loop, the notes are played according to their distribution in the dataset
+live_loop :distribute do
+  note = note_distribution.tick
+  synth :piano, note: note
+  sleep 0.5
+end
+```
+
+You can also do this with effects, panning, whatever you want!
