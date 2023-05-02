@@ -10,7 +10,7 @@ One of the most common [techniques in sonification](https://github.com/Decibels-
 
 Here is a basic normalise function:
 
-```
+```ruby
 def normalise(x, xmin, xmax, ymin, ymax)
   xrange = xmax - xmin
   yrange = ymax - ymin
@@ -20,7 +20,7 @@ end
 
 Given a data value, you can use the above function to "translate" it like so and store it in the variable `translatedValue`:
 
-```
+```ruby
 translatedValue = normalise(originalValue, 0.01, 1, 50, 120)
 ```
 
@@ -30,7 +30,7 @@ In the above example, we set the range of the data (ie the `xmin` and `xmax`) as
 
 Sonic Pi includes a native method to read CSV files. The below snippet shows you how to load a CSV file and then save the first column as a data array in the variable `first_column`.
 
-```
+```ruby
 require "csv"
 
 file = "path/file.csv"
@@ -46,7 +46,7 @@ first_column = data.by_col[1].map(&:to_i)
 
 If you have many values that you want to loop through and sonify, you can use the `tick` method:
 
-```
+```ruby
 data = [32, 28, 42, 40, 40, 36, 46, 42]
 
 live_loop :dataloop do
@@ -68,13 +68,13 @@ live_loop :dataloop do
 
 Sonic Pi has a built in "if" statement which can be handy. The below statement sets a 50/50 chance of playing a given note:
 
-```
+```ruby
 play 53, amp: 0.3, release: 2 if one_in(2)
 ```
 
 To make this more interesting, you can combine it with the `normalise` function documented above to control the frequency of notes based on a piece of data:
 
-```
+```ruby
 value = normalise(dataPoint,data.min,data.max,1,10)
 
 play 53, amp: 0.3 if one_in(value)
@@ -85,7 +85,7 @@ play 53, amp: 0.3 if one_in(value)
 
 Let's say you have a dataset with distribution values, like 25% are X, 60% are Y and 15% are Z. If you wanted to represent this sonically, you might map each group (X,Y, and Z) to a different note and then want to spread those notes according to their percentage values. The below snippet shows how to do this:
 
-```
+```ruby
 # if you have a dataset with a distribution of values
 # this dataset means: 25% should be the note C3, 60% E3 and 15% G3
 data = [
@@ -122,3 +122,113 @@ end
 ```
 
 You can also do this with effects, panning, whatever you want!
+
+## Advanced Data Loading
+Here's a longer snippet that develops some of the above techniques to load, process, and normalise a dataset with multiple columns. It doesn't use the CSV library, instead it reads in the data line by line from the file.
+
+```ruby
+
+normParameters = {"year" => nil,
+                  "column1" => {"note" => :e4, "pan" => -0.7,
+                               "x1" => 0, "x2" => 200,
+                               "y1" => 0, "y2" => 100},
+                  "column2" => {"note" => :a4, "pan" => 0.7,
+                             "x1" => 50, "x2" => 100,
+                             "y1" => 0, "y2" => 1}
+                  }
+
+# -------------
+# load the data
+# -------------
+puts("Loading data")
+
+data = Hash.new # set up empty array to hold the data
+
+# Store each line from the file in an array
+lines = [];
+File.open(path/file.csv') do |file| # Open the file
+  file.each_line do |line| # loop over each line
+    lines.push(line) #strip off any whitespace
+  end
+end
+
+puts("Data loaded - there are #{lines.length} lines in the file, including the header.")
+
+# -------------------
+# processing the data
+# -------------------
+
+colheaders = lines[0].split(",") #split the first line into an array
+
+colheaders.each { |colhead| # loop over that array
+  colhead.strip! # strip whitespace from each header
+  data[colhead] = Array.new # add header as a key in the data hash
+}
+
+puts("Header parsed - columns are:", colheaders)
+
+# Then loop over each remaining lines
+lines[1..lines.length-1].each do |line| # Loop over each line
+  
+  # loop over each column header
+  colheaders.length.times do |colindex|
+    
+    # Log the data into the hash
+    data[colheaders[colindex]].push(line.split(",")[colindex].strip)
+    
+  end
+end
+
+puts("Track will be #{(lines.length-1) / current_bpm} minutes long")
+
+# -----------------------------
+# define normalisation function
+# -----------------------------
+puts ("Defining normalisation function")
+
+define :normalize do |x, xmin, xmax, ymin, ymax|
+  
+  xrange = xmax - xmin
+  yrange = ymax - ymin
+  
+  return (x == "") ? "-" : ymin + (x.to_f - xmin) * (yrange.to_f / xrange.to_f)
+  
+end
+
+# ------------------
+# normalise the data
+# ------------------
+puts ("Normalising the data")
+
+ndata = Hash.new # new hash for normalised data
+
+# Loop over each column header
+colheaders.each do |header|
+  
+  # Make a new array to store the normalised data for that column header
+  ndata[header] = Array.new
+  
+  if (normParameters[header] == nil) # For non-data rows
+    ndata[header] = data[header] # Don't normalise at all - just pass the data through
+    
+  else
+    # Loop over each datapoint
+    data[header].each do |datum|
+      
+      # Normalise it according to the parameters set at the top
+      ndatum = normalize(datum, normParameters[header]["x1"], normParameters[header]["x2"], normParameters[header]["y1"], normParameters[header]["y2"])
+      
+      # Clip down things that exceed the parameters
+      if (ndatum > normParameters[header]["y2"])
+        ndatum = normParameters[header]["y2"]
+      end
+      
+      # Push it into the appropriate array
+      ndata[header].push(ndatum)
+    end
+  end
+end
+
+puts ("Data normalised!")
+puts ndata
+```
