@@ -33,6 +33,14 @@ Feel free to use existing members as a template for adding information about you
 - **Ask me for help or tips on:** tools, sonic variables, podcasting, modular synthesis, VCV Rack
 - **Find me on:** [Newsletter](http://buttondown.email/duncangeere), [Mastodon](https://vis.social/@duncangeere), [Instagram](http://instagram.com/duncan_geere) 
 
+### Maxene Graze
+- *Data designer, living, breathing swiss army knife who uses data to dive deeper into her passions and create memorable experiences.*
+- **Location:** Berlin, Germany
+- **Website:** https://datagrazing.com/
+- **Interests:** multi-sensory data experiences, fermentation, storytelling with data, language learning
+- **Ask me for help or tips on:** data design, concepts, multisensory data experiences
+- **Find me on:** [Email](mailto:maxene.graze@gmail.com), [Instagram](https://www.instagram.com/datagrazing/), [Twitter](https://twitter.com/max_graze), [Mastodon](https://vis.social/@datagrazing)
+- 
 ### Miriam Quick
 - *Journalist, author and musician who explores novel and diverse ways of communicating data.*
 - **Location:** Devon, UK
