@@ -123,7 +123,7 @@ end
 
 You can also do this with effects, panning, whatever you want!
 
-## Advanced Data Loading
+## Advanced data loading
 Here's a longer snippet that develops some of the above techniques to load, process, and normalise a dataset with multiple columns. It doesn't use the CSV library, instead it reads in the data line by line from the file.
 
 ```ruby
@@ -231,4 +231,76 @@ end
 
 puts ("Data normalised!")
 puts ndata
+```
+## Note density function
+Here's a function called noteDensity that can be used to map data to the number of sounds in a time period. The denser the sounds, the higher the number, producing an effect like a Geiger counter.
+
+```ruby
+
+# -------------
+# Load data
+# -------------
+data = [1, 5, 11, 2, 9, 16, 5, 6] # Set up placeholder array between 1 and 16
+
+
+# ---------------------------
+# Define noteDensity function
+# ---------------------------
+puts ("Defining noteDensity function")
+
+define :noteDensity do |array, level|
+  possibles = (0..array.length-1).to_a # Make an array of indexes
+  
+  # Run a loop "level" times
+  level.times do
+    chosen = possibles.sample(1) # Pick one random index from the possibles array
+    possibles.delete(chosen) # Remove it from the possibles array
+    array[chosen] = 1 # Set it to "on"
+  end
+  
+  return array
+  
+end
+
+# ------------------
+# Play sonification!
+# ------------------
+
+counter = 0; # Initialise data counter
+
+
+# START THE LOOP!
+data.length.times do |datum|
+  
+  puts counter
+  
+  maxClicks = 16 # Set max clicks per datapoint
+  tickGap = 3.0/maxClicks # Set gap between clicks
+  
+  # Choose a variable to sonify
+  geig = data[counter.to_i] # Get the datapoint for that variable for that row
+  
+  puts(geig)
+  
+  # Set up array of data
+  geigArray = Array.new(maxClicks) {|i| 0 } # Create an array of 0s
+  noteDensity(geigArray, geig) # Add data to the array
+  
+  # loop over each array
+  geigArray.each do |pulse|
+    if (pulse == 1) # If the pulse is on...
+      use_synth :beep
+      play 72, release: 0.05 # Play a short beep sound
+    end
+    
+    sleep tickGap # Add gap between ticks
+  end
+  
+  sleep 1
+  
+  # Increment the counter
+  counter += 1
+  
+end
+
 ```
