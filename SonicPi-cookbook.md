@@ -146,7 +146,7 @@ data = Hash.new # set up empty array to hold the data
 
 # Store each line from the file in an array
 lines = [];
-File.open(path/file.csv') do |file| # Open the file
+File.open('path/file.csv') do |file| # Open the file
   file.each_line do |line| # loop over each line
     lines.push(line) #strip off any whitespace
   end
