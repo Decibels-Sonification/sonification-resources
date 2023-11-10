@@ -31,7 +31,8 @@ The below is a non-exhaustive list of tools that our community members have used
 
 ### Software
 
-- **[Holon.ist](https://holon.ist/)** - Holon.ist is a system for flexible processing of sensor data into MIDI and OSC. Available for iPhone and iPad as a Universal iOS app. Connect your studio hardware and favourite music apps, VJ or lighting software, or make your own sounds with embedded Pure Data. 
+- **[Datasonifyer](https://datasonifyer.de/en/)** - Datasonifyer is a web app that lets you map data to frequency, amplitude, filter cutoff and more. It's free to use, and friendly for newcomers.
+- **[Holon.ist](https://holon.ist/)** - Holon.ist is a system for flexible processing of sensor data into MIDI and OSC. Available for iPhone and iPad as a Universal iOS app. Connect your studio hardware and favourite music apps, VJ or lighting software, or make your own sounds with embedded Pure Data.
 - **[Loud Numbers (VCV)](https://library.vcvrack.com/LoudNumbers/LoudNumbers)** - a plugin for the VCV Rack modular synthesizer simulator that lets you load a CSV file and convert the values to control voltages that you can send to other modules.
 - **[Loud Numbers (Norns)](https://norns.community/en/authors/duncan-geere/loud-numbers)** - is a script for the Monome Norns music computer that lets you load a CSV file and convert the values into pitches in a specific sale. When paired with the Monome Crow, it can output control voltages to Eurorack modular synth hardware.
 
