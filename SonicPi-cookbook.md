@@ -54,7 +54,7 @@ live_loop :dataloop do
    synth :prophet, note: value, release: 1, attack: 0.1, cutoff: 80, amp: 0.3
    sleep 0.5
    
-   if (tick == data.length-1)
+   if (look == data.length-1)
      stop
    end
  end
