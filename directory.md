@@ -27,11 +27,11 @@ Feel free to use existing members as a template for adding information about you
 
 ### Duncan Geere
 - *information designer interested in climate and the environment. Co-host of the Loud Numbers podcast.*
-- **Location:** Helsingborg, Sweden
+- **Location:** Malmö, Sweden
 - **Website:** http://www.duncangeere.com, http://www.loudnumbers.net
 - **Interests:** community-building, sonification tools and teaching, storytelling with sound
 - **Ask me for help or tips on:** tools, sonic variables, podcasting, modular synthesis, VCV Rack
-- **Find me on:** [Newsletter](http://buttondown.email/duncangeere), [Mastodon](https://vis.social/@duncangeere), [Instagram](http://instagram.com/duncan_geere) 
+- **Find me on:** [Instagram](http://instagram.com/duncan_geere) 
 
 ### Maxene Graze
 - *Data designer, living, breathing swiss army knife who uses data to dive deeper into her passions and create memorable experiences.*
